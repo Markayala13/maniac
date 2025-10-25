@@ -1,0 +1,918 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <title>PlumMet - Plumber and Construction HTML Template</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/sass/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                    <img src="assets/images/preloader.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!-- Start header -->
+        <header id="header" class="header-style-3">
+            <div class="topbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-lg-7 col-sm-12 col-12">
+                            <div class="contact-intro">
+                                <ul>
+                                    <li><i class="fi ti-location-pin"></i>28 Street, New York City, USA</li>
+                                    <li><i class="fi flaticon-email"></i> plummet@gmail.com</li>
+                                    <li><i class="ti-time"></i> Sun - Mon 9AM - 5PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-5 col-sm-12 col-12">
+                            <div class="contact-info">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-site-header">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-1 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-5 col-5">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg"
+                                            alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="#">Home </a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Home style 1</a></li>
+                                                <li><a class="active" href="index-2.html">Home style 2</a></li>
+                                                <li><a href="index-3.html">Home style 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Service</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="service-single.html">Service Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="team-single.html">Team Single</a></li>
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop-single.html">Shop Single</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="chackout.html">Chackout</a></li>
+                                                <li><a href="404.html">404 Error</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Project</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="project.html">Project</a></li>
+                                                <li><a href="project-single.html">Project Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Blog </a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog right sidebar</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                                <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="#">Blog details</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="blog-single.html">Blog details right sidebar</a>
+                                                        </li>
+                                                        <li><a href="blog-single-left-sidebar.html">Blog details left
+                                                                sidebar</a></li>
+                                                        <li><a href="blog-single-fullwidth.html">Blog details
+                                                                fullwidth</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                    </ul>
+
+                                </div><!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-2">
+                                <div class="header-right">
+                                    <div class="mini-cart">
+                                        <button class="cart-toggle-btn"> <i class="fi flaticon-shopping-cart"></i> <span
+                                                class="cart-count">2</span></button>
+                                        <div class="mini-cart-content">
+                                            <button class="mini-cart-close"><i class="ti-close"></i></button>
+                                            <div class="mini-cart-items">
+                                                <div class="mini-cart-item clearfix">
+                                                    <div class="mini-cart-item-image">
+                                                        <a href="shop.html"><img
+                                                                src="assets/images/shop/mini-cart/img-1.jpg" alt></a>
+                                                    </div>
+                                                    <div class="mini-cart-item-des">
+                                                        <a href="shop.html">Compression</a>
+                                                        <span class="mini-cart-item-price">$100.15 x 1</span>
+                                                        <span class="mini-cart-item-quantity"><a href="#"><i
+                                                                    class="ti-close"></i></a></span>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-cart-item clearfix">
+                                                    <div class="mini-cart-item-image">
+                                                        <a href="shop.html"><img
+                                                                src="assets/images/shop/mini-cart/img-2.jpg" alt></a>
+                                                    </div>
+                                                    <div class="mini-cart-item-des">
+                                                        <a href="shop.html">Dorper Elbow</a>
+                                                        <span class="mini-cart-item-price">$230.25 x 2</span>
+                                                        <span class="mini-cart-item-quantity"><a href="#"><i
+                                                                    class="ti-close"></i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mini-cart-action clearfix">
+                                                <span class="mini-checkout-price">Subtotal: <span>$330.35</span></span>
+                                                <div class="mini-btn">
+                                                    <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
+                                                    <a href="cart.html" class="view-cart-btn">View Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <button class="search-toggle-btn"><i class="fi flaticon-loupe"></i></button>
+                                            <div class="header-search-form">
+                                                <form>
+                                                    <div>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search here...">
+                                                        <button type="submit"><i class="fi flaticon-loupe"></i></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start of hero -->
+        <section class="wpo-hero-slider-s2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-1.jpg">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>We Are <span>Expert</span> Plumber Trust</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, justo,
+                                            habitant.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-2.jpg">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Plumber <span>Service</span> is at your Doorstep.</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, justo,
+                                            habitant.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-3.jpg">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Provide <span>Quality</span> Plumbing Servies.</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, justo,
+                                            habitant.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+                </div>
+                <!-- end swiper-wrapper -->
+
+                <!-- swipper controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!-- end of hero slider -->
+
+
+        <!-- start of wpo-about-section-s3 -->
+        <section class="wpo-about-section-s3 section-padding">
+            <div class="container">
+                <div class="wpo-about-section-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                            <div class="wpo-about-img wow fadeInLeftSlow" data-wow-duration="1500ms">
+                                <div class="wpo-about-img-left">
+                                    <img src="assets/images/img-1.jpg" alt="">
+                                </div>
+                                <div class="about-img-inner">
+                                    <div class="about-img-inner-text">
+                                        <h2>38 <span>Years of <br> experiecne.</span></h2>
+                                        <p>It was popularised with the release sheets and more recently.</p>
+                                    </div>
+                                    <img src="assets/images/img-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                            <div class="wpo-about-content wow fadeInRightSlow" data-wow-duration="1500ms">
+                                <div class="wpo-about-content-top">
+                                    <h2>A Company That Change And Solve your All Kind Of Handyman Solutions.</h2>
+                                    <p>Lacus mattis dapibus feugiat odio senectus hac nisi, viverra pulvinar aenean penatibus praesent.
+                                        Facilisi euismod commodo bibendum ad mi enim sociis class, vehicula convallis congue porta ut posuere.</p>
+                                </div>
+                                <div class="wpo-about-check-wrap">
+                                    <div class="wpo-about-check-item">
+                                        <p>Curabitur a mauris tortor. Donec id vestibulum nunc, a pretium mi.</p>
+                                    </div>
+                                    <div class="wpo-about-check-item">
+                                        <p>Curabitur a mauris tortor. Donec id vestibulum nunc, a pretium mi.</p>
+                                    </div>
+                                </div>
+                                <a href="service.html" class="theme-btn">All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of wpo-about-section-s3 -->
+
+  
+        <!-- start of plummet-service-section -->
+        <section class="plummet-service-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="wpo-section-title">
+                            <span>our services</span>
+                            <h2>Common Plumbing Problems and Their Solutions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-wrap">
+                    <div class="service-slider owl-carousel">
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2><a href="service-single.html">water heater repair</a></h2>
+                                <p>Tempus egestas sed sed risus.
+                                    Ultricies tristique nulla aliquet enim.
+                                    Sed egestas egestas fringilla phasellus.</p>
+                                <div class="service-btn">
+                                    <a href="service-single.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2><a href="service-single.html">leak detection</a></h2>
+                                <p>Tempus egestas sed sed risus.
+                                    Ultricies tristique nulla aliquet enim.
+                                    Sed egestas egestas fringilla phasellus.</p>
+                                <div class="service-btn">
+                                    <a href="service-single.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-3.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2><a href="service-single.html">hot water system</a></h2>
+                                <p>Tempus egestas sed sed risus.
+                                    Ultricies tristique nulla aliquet enim.
+                                    Sed egestas egestas fringilla phasellus.</p>
+                                <div class="service-btn">
+                                    <a href="service-single.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of plummet-service-section -->
+
+
+        <!-- start of plummet-team-section-s2 -->
+        <section class="plummet-team-section-s2 section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="wpo-section-title s2">
+                            <span>team members</span>
+                            <h2>Reasons why hiring a professional plumber is important</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="team-single-item">
+                                <div class="image">
+                                    <img src="assets/images/team/1.jpg" alt="">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="team-single.html">Sandra Garrett</a></h2>
+                                    <span>project manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="team-single-item">
+                                <div class="image">
+                                    <img src="assets/images/team/2.jpg" alt="">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="team-single.html">Santos Cunning</a></h2>
+                                    <span>project manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="team-single-item">
+                                <div class="image">
+                                    <img src="assets/images/team/3.jpg" alt="">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="team-single.html">Merle Salazar</a></h2>
+                                    <span>project manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="team-single-item">
+                                <div class="image">
+                                    <img src="assets/images/team/4.jpg" alt="">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="team-single.html">Max Kelley</a></h2>
+                                    <span>project manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of plummet-team-section-s2 -->
+
+        <!-- start wpo-pricing-section -->
+        <section class="wpo-pricing-section section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="wpo-section-title">
+                        <span>Pricing Plan</span>
+                        <h2>Choose Your Optimal Plan</h2>
+                        <div class="invisible-text">
+                            <h2>Pricing Plan</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpo-pricing-wrap">
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Basic</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>$120<span>/per m²</span></h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>water heater repair</li>
+                                            <li>leak detection</li>
+                                            <li>Complete home redesign</li>
+                                            <li>Prevent Plumbing Problems</li>
+                                            <li>Immediate Service</li>
+                                        </ul>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1300ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Premium</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>$210<span>/per m²</span></h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>water heater repair</li>
+                                            <li>leak detection</li>
+                                            <li>hot water system</li>
+                                            <li>Prevent Plumbing Problems</li>
+                                            <li>Immediate Service</li>
+                                        </ul>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1100ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Advanced</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>$373<span>/per m²</span></h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>water heater repair</li>
+                                            <li>leak detection</li>
+                                            <li>Complete home redesign</li>
+                                            <li>Prevent Plumbing Problems</li>
+                                            <li>Immediate Service</li>
+                                        </ul>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-pricing-section -->
+
+        <!-- stert of plummet-testimonial-section -->
+        <section class="plummet-testimonial-section section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="wpo-section-title">
+                            <span>customer testimonials</span>
+                            <h2>Qualifications to look for in a reputable plumber</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="wraper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow  fadeInLeftSlow" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Tenetur eius possimus est animi fugiat eos molestiae vel</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/1.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>M. Jaction</h3>
+                                        <span>Consultant</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Tenetur eius possimus est animi fugiat eos molestiae vel</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/2.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>M. Jaction</h3>
+                                        <span>Consultant</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow  fadeInRightSlow" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Tenetur eius possimus est animi fugiat eos molestiae vel</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>M. Jaction</h3>
+                                        <span>Consultant</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of plummet-testimonial-section -->
+
+  
+        <!-- start wpo-blog-section -->
+        <section class="wpo-blog-section section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-md-6 col-12">
+                        <div class="wpo-section-title">
+                            <div class="section-titl-shape-1">
+                                <svg width="687" height="473" viewBox="0 0 687 473" fill="none">
+                                    <g opacity="0.44" filter="url(#filter0_f_1_104)">
+                                        <circle cx="343.5" cy="129.5" r="129.5" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_f_1_104" x="0" y="-214" width="687" height="687"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                result="shape" />
+                                            <feGaussianBlur stdDeviation="107" result="effect1_foregroundBlur_1_104" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="section-titl-shape-2">
+                                <svg width="687" height="473" viewBox="0 0 687 473" fill="none">
+                                    <g opacity="0.44" filter="url(#filter0_f_1_1050)">
+                                        <circle cx="343.5" cy="129.5" r="129.5" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_f_1_1050" x="0" y="-214" width="687" height="687"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                result="shape" />
+                                            <feGaussianBlur stdDeviation="107" result="effect1_foregroundBlur_1_105" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>Blog Post</span>
+                            <h2>Awesome Blog Post & Article.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-wrap">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="blog-item">
+                                <div class="image">
+                                    <img src="assets/images/blog/img-1.jpg" alt="">
+                                </div>
+                                <div class="dete">
+                                    <span>26</span>
+                                    <strong>AUGUST</strong>
+                                </div>
+                                <div class="blog-content">
+                                    <h2>How to Stage Your
+                                        Home for Maximum buyer Appeal</h2>
+                                    <p>Lorem sum has been the industry standard dummy of the text ever since the
+                                        scrambled it to make.</p>
+                                    <a href="blog-single.html" class="theme-btn-s2">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="blog-item">
+                                <div class="image">
+                                    <img src="assets/images/blog/img-2.jpg" alt="">
+                                </div>
+                                <div class="dete">
+                                    <span>28</span>
+                                    <strong>AUGUST</strong>
+                                </div>
+                                <div class="blog-content">
+                                    <h2>Understanding the Importance
+                                        of Water.</h2>
+                                    <p>Lorem sum has been the industry standard dummy of the text ever since the
+                                        scrambled it to make.</p>
+                                    <a href="blog-single.html" class="theme-btn-s2">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="blog-item">
+                                <div class="image">
+                                    <img src="assets/images/blog/img-3.jpg" alt="">
+                                </div>
+                                <div class="dete">
+                                    <span>30</span>
+                                    <strong>AUGUST</strong>
+                                </div>
+                                <div class="blog-content">
+                                    <h2>How to Stage Your
+                                        Home for Maximum buyer Appeal</h2>
+                                    <p>Lorem sum has been the industry standard dummy of the text ever since the
+                                        scrambled it to make.</p>
+                                    <a href="blog-single.html" class="theme-btn-s2">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end wpo-blog-section -->
+
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/logo-2.svg" alt="blog">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt
+                                    labore et dolore magna aliqua</p>
+                                <div class="social-icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>- help centre</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">- Customer Support</a></li>
+                                    <li><a href="#">- All Brand Tire Shop</a></li>
+                                    <li><a href="#">- Terms & Conditions</a></li>
+                                    <li><a href="#">- Support Centre</a></li>
+                                    <li><a href="#">- Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>- resource</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">- Free Training</a></li>
+                                    <li><a href="#">- Working Tutorials</a></li>
+                                    <li><a href="#">- Blog Post</a></li>
+                                    <li><a href="#">- Our Work Station</a></li>
+                                    <li><a href="#">- Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget newsletter-widget">
+                                <div class="widget-title">
+                                    <h3>Newsletter:</h3>
+                                </div>
+                                <div class="f-from">
+                                    <input type="email" class="form-control" placeholder="Enter your email:">
+                                    <input type="submit" class="theme-btn" value="subscribe now">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="lower-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-6 col-12">
+                                <p class="copyright"> Copyright © 2023 plummet by <a href="index.html">wpOceans</a>.
+                                    All
+                                    Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+   
+
+
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
