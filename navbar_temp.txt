@@ -1,7 +1,0 @@
-                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Service</a></li>
-                                        <li><a href="#">Project</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                    </ul>
