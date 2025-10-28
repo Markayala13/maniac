@@ -137,6 +137,35 @@
                 right: 10px;
             }
         }
+
+        /* Video responsive adjustments */
+        .wpo-about-img-left iframe {
+            aspect-ratio: 600/1181;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 992px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -305,7 +334,7 @@
                         <div class="col-xl-6 col-lg-12 col-md-12 col-12">
                             <div class="wpo-about-img wow fadeInLeftSlow" data-wow-duration="1500ms">
                                 <div class="wpo-about-img-left">
-                                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/QlPP2vIU0q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 600/1181; border-radius: 10px;"></iframe>
+                                    <iframe src="https://www.youtube.com/embed/QlPP2vIU0q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="about-img-inner">
                                     <div class="about-img-inner-text">
