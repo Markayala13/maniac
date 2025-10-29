@@ -1,0 +1,37 @@
+LUT (Look Up Table) is an incredibly simple way to color grade footage.
+LUTs greatly work with most of the video editing programs such as Final Cut, Premiere Pro, After Effects, DaVinci Resolve, etc.
+
+Here are quick instructions on how to use your LUTs in some of these programs:
+
+Using LUTS in Adobe Premiere Pro:
+In Premiere Pro, open the Color workspace by clicking the Color tab at the top center of Premiere Pro.
+1.Click on the clip you want to work with.
+2. In the Lumetri panel, open the Basic Correction tab.
+3. Under Basic Correction, select the Input LUT dropdown menu, and click on Browse…
+4. Select a LUT file from the files you downloaded.
+
+
+
+Using LUTS in Final Cut Pro:
+The latest version of Final Cut Pro 10.4, comes with a LUT utility built in. To use any LUTS in FCPx, here’s what to do. Note that you need to be using FCPx 10.4 or higher
+1. Go to the effect browser int he FCPX interface
+2. Select the Colour Set
+3. Select the “Custom LUT” effect and apply it to your footage.
+4. In the effect controls, select the LUT pop-up menu and choose: “Choose Custom LUT…”
+5. Select a LUT from the folder of LUTS that you downloaded.
+Control the amount of the effect with the Mix slider.
+
+Using LUTs in Adobe Photoshop:
+1. Open an image in Photoshop
+(Optional) duplicate the layer to which you wish to apply the LUT.
+2. From the menu choose: Image > Adjustments > Colour Lookup.
+3. In the first field, select Load 3D Lut… from the pop-up menu. 
+4. Select one of the LUTs that you downloaded.
+5. Click OK to apply the LUT
+If you added the LUT to a duplicate layer, use the layer’s opacity to control the intensity of the effect.
+
+Using LUTs in Adobe Lightroom:
+https://www.youtube.com/watch?v=Kexd__B_nts
+
+Here is a nice article on how to use LUTs:
+https://www.shutterstock.com/blog/how-use-luts-color-grading

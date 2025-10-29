@@ -1,0 +1,903 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/plumbmaniacs-logo.png">
+    <title>PlumbManiacs Inc. - We're Maniacs for Perfect Plumbing! | San Fernando Valley</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/sass/style.css?v=3" rel="stylesheet">
+    <style>
+        .header-style-3 .topbar ul .fi:before,
+        .header-style-3 .contact-intro ul li i,
+        .topbar .contact-intro ul li i {
+            color: #FECB00 !important;
+        }
+
+        /* Eliminar línea original del hover */
+        @media (min-width: 992px) {
+            .wpo-site-header #navbar > ul > li > a:hover,
+            .wpo-site-header #navbar > ul > li > a:focus {
+                text-decoration: none !important;
+            }
+
+            /* Nueva línea amarilla en hover del navbar desktop */
+            .wpo-site-header #navbar > ul > li > a {
+                position: relative;
+            }
+            .wpo-site-header #navbar > ul > li > a:after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 3px;
+                background: #FECB00;
+                transition: width 0.3s ease;
+            }
+            .wpo-site-header #navbar > ul > li > a:hover:after,
+            .wpo-site-header #navbar > ul > li > a.active:after {
+                width: 80%;
+            }
+        }
+
+        /* Gallery Section Styling */
+        .project-slider-s2 .project-item {
+            margin: 20px;
+        }
+
+        .project-slider-s2 .project-img {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 5px solid #000;
+            box-shadow: 0 10px 30px rgba(254, 203, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .project-slider-s2 .project-img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(254, 203, 0, 0.5);
+            border-color: #FECB00;
+        }
+
+        .project-slider-s2 .project-img img {
+            width: 100%;
+            height: 400px;
+            display: block;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        /* Owl Carousel Navigation Arrows */
+        .project-slider-s2.owl-carousel .owl-nav button.owl-prev,
+        .project-slider-s2.owl-carousel .owl-nav button.owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50% !important;
+            background: #FECB00 !important;
+            border: 4px solid #000 !important;
+            color: #000 !important;
+            font-size: 28px !important;
+            font-weight: bold !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-slider-s2.owl-carousel .owl-nav button.owl-prev {
+            left: -30px;
+        }
+
+        .project-slider-s2.owl-carousel .owl-nav button.owl-next {
+            right: -30px;
+        }
+
+        .project-slider-s2.owl-carousel .owl-nav button.owl-prev:hover,
+        .project-slider-s2.owl-carousel .owl-nav button.owl-next:hover {
+            background: #000 !important;
+            color: #FECB00 !important;
+            border-color: #FECB00 !important;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .project-slider-s2.owl-carousel .owl-nav button span {
+            line-height: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .project-slider-s2.owl-carousel .owl-nav button.owl-prev {
+                left: 10px;
+            }
+            .project-slider-s2.owl-carousel .owl-nav button.owl-next {
+                right: 10px;
+            }
+        }
+
+        /* Video responsive adjustments */
+        .wpo-about-img-left iframe {
+            aspect-ratio: 600/1181;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 992px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .wpo-about-img-left iframe {
+                aspect-ratio: 16/9;
+                max-height: 250px;
+            }
+        }
+
+        /* Mobile Menu Styling - Black Background */
+        @media (max-width: 991px) {
+            .navigation-holder {
+                background: #000000 !important;
+            }
+
+            #navbar {
+                background: #000000 !important;
+            }
+
+            .wpo-site-header #navbar > ul > li > a {
+                color: #ffffff !important;
+            }
+
+            .wpo-site-header #navbar > ul > li > a:hover,
+            .wpo-site-header #navbar > ul > li > a.active {
+                color: #FECB00 !important;
+            }
+
+            .menu-close {
+                color: #FECB00 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader" style="background-color: #121A22 !important;">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle" style="box-shadow: inset 0 0 0 1px rgba(254, 203, 0, 0.3) !important;"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line" style="box-shadow: inset 0 0 0 1px rgba(254, 203, 0, 0.8) !important;"></div>
+                    </div>
+                    <img src="assets/images/plumbmaniacs-logo.png" alt="PlumbManiacs" style="max-width: 250px;">
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!-- Start header -->
+        <header id="header" class="header-style-3">
+            <div class="topbar" style="background-color: #000000; color: #ffffff;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-lg-7 col-sm-12 col-12">
+                            <div class="contact-intro" style="color: #ffffff;">
+                                <ul>
+                                    <li style="color: #ffffff; white-space: nowrap;"><i class="fi ti-location-pin" style="color: #FECB00 !important;"></i> 15071 Polk Street, Sylmar CA 91342 &nbsp;&nbsp;&nbsp; <i class="fi flaticon-email" style="color: #FECB00 !important;"></i> Plumbmanics1@gmail.com &nbsp;&nbsp;&nbsp; <i class="ti-time" style="color: #FECB00 !important;"></i> Mon - Sun 24/7 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i class="ti-mobile" style="color: #FECB00 !important;"></i> (866) 611-9238 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; LIC#1143262</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-5 col-sm-12 col-12">
+                            <div class="contact-info">
+                                <ul>
+                                    <li><a href="#" style="color: #FECB00;"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#" style="color: #FECB00;"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-site-header">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-1 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-5 col-5">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logobg.png"
+                                            alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li><a class="active" href="#home">Home</a></li>
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#services">Service</a></li>
+                                        <li><a href="#projects">Project</a></li>
+                                        <li><a href="#contact">Contact us</a></li>
+                                    </ul>
+
+                                </div><!-- end of nav-collapse -->
+                            </div>
+                        </div>
+                    </div><!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start of hero -->
+        <section id="home" class="wpo-hero-slider-s2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide1-hero.png">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>We're <span>Maniacs</span> for Perfect Plumbing!</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>Honest, reliable, and trustworthy plumbing services for San Fernando Valley homes and businesses.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide2-hero.png">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Complete <span>Plumbing Solutions</span> at Your Doorstep</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>From whole house plumbing to drains, repipe, and sewer lines - we handle it all with professional care.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide3-hero.png">
+                            <!-- <div class="gradient-overlay"></div> -->
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Every Problem is an <span>Opportunity</span> to Serve You Better</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-title-sub">
+                                        <p>Experience the difference of working with plumbers who are passionate about delivering exceptional results.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+                </div>
+                <!-- end swiper-wrapper -->
+
+                <!-- swipper controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!-- end of hero slider -->
+
+
+        <!-- start of wpo-about-section-s3 -->
+        <section id="about" class="wpo-about-section-s3 section-padding">
+            <div class="container">
+                <div class="wpo-about-section-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                            <div class="wpo-about-img wow fadeInLeftSlow" data-wow-duration="1500ms">
+                                <div class="wpo-about-img-left">
+                                    <iframe src="https://www.youtube.com/embed/QlPP2vIU0q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="about-img-inner">
+                                    <div class="about-img-inner-text">
+                                        <h2>100% <span>Honest & <br> Reliable</span></h2>
+                                        <p>Building trust through quality plumbing services in San Fernando Valley.</p>
+                                    </div>
+                                    <img src="assets/images/hernandez.jpeg" alt="PlumbManiacs Service" style="aspect-ratio: 1/1; width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                            <div class="wpo-about-content wow fadeInRightSlow" data-wow-duration="1500ms">
+                                <div class="wpo-about-content-top">
+                                    <h2>We Go Crazy for Plumbing - That's What We Do and We Love It!</h2>
+                                    <p>At PlumbManiacs Inc., we provide honest, reliable, and trustworthy plumbing services throughout Los Angeles California. We believe in being professional while maintaining a personal touch, ensuring that every experience with us is unforgettable. We don't just fix problems—we see each one as an opportunity to show off our skills and exceed your expectations.</p>
+                                </div>
+                                <div class="wpo-about-check-wrap">
+                                    <div class="wpo-about-check-item">
+                                        <p>Complete residential and commercial plumbing solutions you can trust.</p>
+                                    </div>
+                                    <div class="wpo-about-check-item">
+                                        <p>Dedicated to delivering exceptional results with passion and integrity.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="theme-btn"><i class="ti-mobile" style="margin-right: 8px;"></i>(866) 611-9238</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of wpo-about-section-s3 -->
+
+  
+        <!-- start of plummet-service-section -->
+        <section id="services" class="plummet-service-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="wpo-section-title">
+                            <span>our services</span>
+                            <h2>Complete Plumbing Solutions for Your Home or Business</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-wrap">
+                    <div class="service-slider owl-carousel">
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Drains & Sewer Lines</h2>
+                                <p>Expert drain cleaning and sewer line services. We tackle clogs, backups, and line repairs with advanced equipment and proven techniques.</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Whole House Repipe</h2>
+                                <p>Complete repiping solutions for residential and commercial properties. Upgrade your old pipes with quality materials and expert installation.</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <div class="icon">
+                                <img src="assets/images/choose/icon-3.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Complete Plumbing Systems</h2>
+                                <p>Full-service plumbing for your entire property including pipe liners, installations, repairs, and maintenance for homes and businesses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of plummet-service-section -->
+
+        <!-- start of gallery section -->
+        <section id="projects" class="section-padding" style="background: #121A22; padding: 80px 0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="wpo-section-title">
+                            <span style="color: #FECB00;">Our Work</span>
+                            <h2 style="color: #fff;">Recent Projects Gallery</h2>
+                            <p style="color: #fff;">See the quality workmanship and attention to detail that makes PlumbManiacs the trusted choice in San Fernando Valley.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="project-slider-s2 owl-carousel">
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb1.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb2.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb3.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb4.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb5.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb6.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb7.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb8.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb9.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb10.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb11.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/plumb 10.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Photo.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/912f1bc3-77c8-44fb-a9f5-c4c40db37efc.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/d60d0bd6-438c-4874-9e99-cd371d7bfbad.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Our Lake Fortress.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Hernandez Handyman Services.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Experience-the-Mastermind-Difference.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Facing-Plumbing-Issues.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/How to Install a Drop-In Kitchen Sink _ Lowe's.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Now that's some gorgeous plumbing_.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Plumber stock image_ Image of cold, installing, cabinet - 23378477.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Life Of A Maintenance Plumber® on Instagram_ _The….jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-img">
+                                    <img src="assets/images/project/Experience-Mastermind-Expert.jpg" alt="PlumbManiacs Plumbing Project">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of gallery section -->
+
+        <!-- start of about PlumbManiacs section -->
+        <section class="section-padding" style="background: #fff;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="about-image" style="margin-bottom: 30px;">
+                            <img src="assets/images/van.jpeg" alt="PlumbManiacs Van" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="about-content" style="padding-left: 30px;">
+                            <span style="color: #FECB00; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 20px; font-size: 20px;">WHY CHOOSE US</span>
+                            <h2 style="color: #121A22; font-size: 52px; margin: 0 0 30px; line-height: 1.1; font-weight: 800;">Why Choose PlumbManiacs?</h2>
+                            <p style="color: #687693; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+                                We're a family-owned plumbing company serving Los Angeles California with honesty, reliability, and expert service. Our maniacs are passionate about perfect plumbing and treating every home like our own.
+                            </p>
+                            <a href="#contact" class="theme-btn" style="display: inline-block; background: #FECB00; color: #000; padding: 15px 35px; border-radius: 5px; font-weight: 600; text-decoration: none; transition: all 0.3s;">
+                                Get your free quote today - no hidden fees, ever
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about PlumbManiacs section -->
+
+        <!-- start wpo-pricing-section -->
+        <section class="wpo-pricing-section section-padding">
+            <div class="container">
+                <div class="wpo-pricing-wrap">
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Honest</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>100%<span> Transparent</span></h2>
+                                        <p>We believe in upfront, honest pricing with no surprises.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>Upfront Pricing - No Hidden Fees</li>
+                                            <li>Clear Explanations of All Work</li>
+                                            <li>Honest Assessments & Recommendations</li>
+                                            <li>Detailed Written Estimates</li>
+                                            <li>No Pressure Sales Tactics</li>
+                                        </ul>
+                                        <a href="#" class="theme-btn">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1300ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Reliable</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>Always<span> On Time</span></h2>
+                                        <p>Count on us for dependable service when you need it most.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>Same-Day Service Available</li>
+                                            <li>24/7 Emergency Response</li>
+                                            <li>Quality Workmanship Guaranteed</li>
+                                            <li>Premium Materials & Equipment</li>
+                                            <li>Follow-Up Support Included</li>
+                                        </ul>
+                                        <a href="#" class="theme-btn">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="wpo-pricing-item wow fadeInUp" data-wow-duration="1100ms">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Trustworthy</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>Expert<span> Professionals</span></h2>
+                                        <p>Fully licensed, insured, and background-checked team members.</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>Licensed & Certified Plumbers</li>
+                                            <li>Fully Insured for Your Protection</li>
+                                            <li>Background-Checked Technicians</li>
+                                            <li>Ongoing Training & Education</li>
+                                            <li>Respectful of Your Home & Time</li>
+                                        </ul>
+                                        <a href="#" class="theme-btn">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-pricing-section -->
+
+        <!-- stert of plummet-testimonial-section -->
+        <section class="plummet-testimonial-section section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="wpo-section-title">
+                            <span>customer testimonials</span>
+                            <h2>What Our Customers Say About PlumbManiacs</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="wraper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow  fadeInLeftSlow" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>PlumbManiacs saved the day! They were honest about the problem, explained everything clearly, and fixed our sewer line issue fast. Truly reliable and trustworthy professionals.</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/garcia.jpg" alt="Maria Garcia">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Maria Garcia</h3>
+                                        <span>Homeowner</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>We needed a complete repipe for our commercial property. PlumbManiacs handled everything professionally while maintaining great communication. The experience was truly unforgettable!</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/chen.jpg" alt="David Chen">
+                                    </div>
+                                    <div class="text">
+                                        <h3>David Chen</h3>
+                                        <span>Business Owner</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-card wow  fadeInRightSlow" data-wow-duration="1500ms">
+                                <div class="icon">
+                                    <ul>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                        <li><img src="assets/images/testimonial/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Best plumbers in San Fernando Valley! They went above and beyond on our drain cleaning service. These guys really are maniacs for perfect plumbing - in the best way possible!</p>
+                                <div class="botom-content">
+                                    <div class="image">
+                                        <img src="assets/images/testimonial/martinez.jpg" alt="Sarah Martinez">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Sarah Martinez</h3>
+                                        <span>Homeowner</span>
+                                    </div>
+                                </div>
+                                <div class="shape">
+                                    <svg  width="129" height="98" viewBox="0 0 129 98" fill="none">
+                                        <path opacity="0.05" d="M117.404 90.0735C124.652 82.1471 129 73.5 129 59.0882C129 33.8676 110.882 11.5294 85.5168 0L78.9944 9.36765C102.91 22.3382 107.983 38.9118 109.433 49.7206C105.809 47.5588 100.736 46.8382 95.6629 47.5588C82.618 49 72.4719 59.0882 72.4719 72.7794C72.4719 79.2647 75.3708 85.75 79.7191 90.7941C84.7921 95.8382 90.5899 98 97.8371 98C105.809 98 113.056 94.3971 117.404 90.0735ZM44.9326 90.0735C52.1798 82.1471 56.5281 73.5 56.5281 59.0882C56.5281 33.8676 38.4101 11.5294 13.0449 0L6.52247 9.36765C30.4382 22.3382 35.5112 38.9118 36.9607 49.7206C33.3371 47.5588 28.264 46.8382 23.191 47.5588C10.1461 49 0 59.0882 0 72.7794C0 79.2647 2.89887 85.75 7.24719 90.7941C11.5955 95.8382 18.118 98 25.3652 98C33.3371 98 40.5843 94.3971 44.9326 90.0735Z" fill="#121A22"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of plummet-testimonial-section -->
+
+        <!-- start contact form section -->
+        <section id="contact" style="padding: 60px 0; background: #f8f9fa;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div style="text-align: center; margin-bottom: 40px;">
+                            <h2 style="color: #121A22; font-size: 32px; margin-bottom: 10px;">Get a Free Quote</h2>
+                            <p style="color: #687693; font-size: 16px;">Fill out the form and we'll contact you soon</p>
+                        </div>
+                        <div style="background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                            <form action="#" method="POST">
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name" required
+                                           style="height: 50px; border: 2px solid #e0e0e0; border-radius: 5px; padding: 0 15px; font-size: 15px;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required
+                                           style="height: 50px; border: 2px solid #e0e0e0; border-radius: 5px; padding: 0 15px; font-size: 15px;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 30px;">
+                                    <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required
+                                           style="height: 50px; border: 2px solid #e0e0e0; border-radius: 5px; padding: 0 15px; font-size: 15px;">
+                                </div>
+                                <button type="submit" class="theme-btn" style="width: 100%; height: 50px; background: #FECB00; border: none; border-radius: 5px; color: #000; font-weight: 600; font-size: 16px; cursor: pointer; transition: all 0.3s;">
+                                    Request Free Quote
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact form section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/logobg.png" alt="PlumbManiacs Inc">
+                                </div>
+                                <p>Honest, reliable, and trustworthy plumbing services for San Fernando Valley and LA County. We're maniacs for perfect plumbing!</p>
+                                <p style="color: #fff; margin-top: 15px; font-size: 16px;"><strong><i class="ti-mobile" style="color: #FECB00;"></i> (866) 611-9238 &nbsp;&nbsp;|&nbsp;&nbsp; LIC#1143262</strong></p>
+                                <div class="social-icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-9 col-md-12 col-sm-12 col-12">
+                            <div class="widget map-widget">
+                                <div class="widget-title" style="margin-bottom: 20px;">
+                                    <h3 style="color: #FECB00;">Our Location</h3>
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.8845768475753!2d-118.43873848478944!3d34.31471108053846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c285e0f0f0f0f0%3A0x0!2s15071%20Polk%20St%2C%20Sylmar%2C%20CA%2091342!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="lower-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-6 col-12">
+                                <p class="copyright"> Copyright © 2025 <a href="index.html">PlumbManiacs Inc.</a> - All Rights Reserved. Serving San Fernando Valley & LA County.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+   
+
+
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js?v=2"></script>
+</body>
+
+</html>
+
